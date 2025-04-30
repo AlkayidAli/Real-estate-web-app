@@ -12,129 +12,24 @@ The Real Estate Project is a web application that allows users to search for pro
 - **Property Details**: View detailed information about a specific property.
 - **Dynamic API Integration**: Fetch property data from an external API.
 - **Database Integration**: Store and retrieve property data using MySQL.
-- **Responsive Design**: Optimized for both desktop and mobile devices.
-
----
-
-## Project Structure
-
-# Real Estate Project
-
-## Overview
-
-The Real Estate Project is a web application that allows users to search for properties across the USA. Users can filter properties by location and status (e.g., for sale or for rent). The application provides detailed property information, including pricing, location, and high-quality images.
-
----
-
-## Features
-
-- **Property Search**: Search for properties by location and status.
-- **Property Details**: View detailed information about a specific property.
-- **Dynamic API Integration**: Fetch property data from an external API.
-- **Database Integration**: Store and retrieve property data using MySQL.
-- **Responsive Design**: Optimized for both desktop and mobile devices.
-
----
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) (v16 or higher)
-- [MySQL](https://www.mysql.com/) database server
-
-### Steps
-
-1. Clone the repository:
-
-   ```bash
-   git clone <repository-url>
-   cd realestate-project-2/realestate
-
-   ```
-
-2. Install dependencies:
-   npm install
-
-3. Set up the .env file: Create a .env file in the root directory and add the following:
-   GLOBAL_DB_HOST=localhost
-   GLOBAL_DB_USER=root
-   GLOBAL_DB_PASSWORD=yourpassword
-   GLOBAL_DB_NAME=realestate
-   VITE_PROPERTIES_API_KEY=your-api-key
-
-4. Start the development server:
-   npm run dev
-
-### Usage
-
-Searching for Properties
-Navigate to the Properties page.
-Enter a location (e.g., "Houston, TX") and select a status (e.g., "forSale").
-Click the Search button to view the results.
-Viewing Property Details
-Click on a property from the list to view its details.
-The details page includes images, pricing, and location information
-
-Here’s the updated README.md file with the full content included:
-
-```markdown
-# Real Estate Project
-
-## Overview
-
-The Real Estate Project is a web application that allows users to search for properties across the USA. Users can filter properties by location and status (e.g., for sale or for rent). The application provides detailed property information, including pricing, location, and high-quality images.
-
----
-
-## Features
-
-- **Property Search**: Search for properties by location and status.
-- **Property Details**: View detailed information about a specific property.
-- **Dynamic API Integration**: Fetch property data from an external API.
-- **Database Integration**: Store and retrieve property data using MySQL.
-- **Responsive Design**: Optimized for both desktop and mobile devices.
-
----
-
-## Project Structure
-```
-
-realestate-project-2/
-├── realestate/
-│ ├── src/
-│ │ ├── routes/
-│ │ │ ├── +page.svelte # Home page
-│ │ │ ├── properties/
-│ │ │ │ ├── +page.svelte # Properties page
-│ │ │ │ ├── api/
-│ │ │ │ │ ├── +server.ts # API endpoints for properties
-│ │ ├── components/
-│ │ │ ├── Header.svelte # Header component
-│ │ │ ├── Footer.svelte # Footer component
-│ │ │ ├── Info.svelte # Info section component
-│ │ │ ├── PropertyForm.svelte # Form for property search
-│ │ │ ├── PropertyList.svelte # List of properties
-│ │ │ ├── PropertyDetails.svelte # Property details view
-│ ├── .svelte-kit/ # SvelteKit build output
-│ ├── package.json # Project dependencies and scripts
-│ ├── README.md # Project documentation
-│ ├── test-db-connection.js # Script to test database connection
-│ ├── .env # Environment variables
-
-````
 
 ---
 
 ## Installation
 
 ### Prerequisites
+
 - [Node.js](https://nodejs.org/) (v16 or higher)
 - [MySQL](https://www.mysql.com/) database server
 
 ### Steps
+
 1. Clone the repository:
    ```bash
    git clone <repository-url>
    cd realestate-project-2/realestate
+   ```
+
 ````
 
 2. Install dependencies:
@@ -267,3 +162,4 @@ The `properties` table stores property data:
 ```
 
 ```
+````
